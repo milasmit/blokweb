@@ -40,7 +40,7 @@ Pleasing.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 Hoofdpagina  
-<img src="basiswebsite/images/hoofdpaginapleasing.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="./images/hoofdpaginapleasing.jpg" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Detailpagina van The Pleasing Pen 
