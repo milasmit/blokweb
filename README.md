@@ -56,13 +56,13 @@ Detailpagina van The Pleasing Pen
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdownschetshoofdpagina.png" width="375px" alt="breakdown van de hoofdpagina">
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+### de tweede pagina: 
+<img src="images/breakdownschetspleasingpen.png" width="375px" alt="breakdown van de detailpagina">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### een dynamisch deel: 
+<img src="images/menubreakdown.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
