@@ -77,7 +77,7 @@ Detailpagina van The Pleasing Pen
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+De html correct neerzetten ging goed, ik had al een beetje geprobeerd om verschillende dingen te positioneren maar dat was iets lastiger. Ook had ik moeite met de grootte van de afbeeldingen goed te maken. 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
@@ -92,10 +92,10 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
+- Mijn html zag er goed uit
+- Ik moet alleen op de homepagina de afbeeldingen in articles zetten zodat ik ze makkelijker kan positioneren.
 - nog een punt
-- ...
+
 
 </details>
 
@@ -111,15 +111,19 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+De foto's in een grid zetten was vrij makkelijk, en het ging ook goed om een hamburgermenu te maken. Ik heb daarvoor de opdracht gevolgd die op dlo staat. Ik heb wel een beetje moeite met de groottes van de afbeeldingen, want iconen wil ik kleiner hebben dan andere afbeeldingen. Het is ook nogal lastig om de afbeeldingen te veranderen als er gehoverd wordt.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Ik heb mijn    |
+|section een grid|
+|gegeven maar dan|
+|ziet dat er ook |
+|zo uit op mijn  |
+|tweede pagina   | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
