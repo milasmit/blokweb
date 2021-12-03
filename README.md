@@ -123,8 +123,10 @@ samen met je groepje opstellen
 |gegeven maar dan|
 |ziet dat er ook |
 |zo uit op mijn  |
-|tweede pagina   | ...                | ...          | ...              |
-
+|tweede pagina.  | ...                | ...          | ...              |
+|
+|Moet ik van de buttons een linkje maken of niet?
+|Alles hovered in een keer, hoe verander ik dat?
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
