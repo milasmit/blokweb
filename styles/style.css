@@ -11,6 +11,17 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h2{
+  font-weight: bold;
+}
+
+h3{
+  font-weight: bold;
+  margin: .5em;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
 header{
   padding: 1em 1em;
   display: grid;
@@ -111,26 +122,41 @@ section{
   grid-gap: 0;
 }
 
-/*section article{
-  transition: .5s;
-}
-
-
-
-section:hover article .hover{
-  display: grid;
-}
-
-section:hover article .normaal{
-  display: none;
-}
-
-*/
-
 article{
   overflow: hidden;
   height: 100%;
 }
+
+/* hoveren over de afbeeldingen */
+
+section article{
+  transition: .5s;
+}
+
+section:hover article, section:focus article{
+  background-color: lightgray;
+  padding: 0;
+}
+
+section:hover article .hover, section:focus article .hover{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+section:hover article .normaal, section:focus article .normaal{
+  display: none;
+}
+
+.hover {
+  display: none;
+}
+
+
+
 
 .normaal img{
   width: 100%;
@@ -141,7 +167,7 @@ img.hover{
   top: 0;
   left: 0;
   display: none;
-  grid-column: 2/3;
+  
 }  
 
 .normaal:hover{
@@ -149,11 +175,14 @@ img.hover{
   padding: 0;
 }
 
+/*
 img.hover:hover{
   display: contents;
 }
 
+*/
 
+/* afbeeldingen over 2 kolommen plaatsen*/
 
 
 article:nth-of-type(3){
@@ -188,18 +217,81 @@ video{
 
 
 footer{
-  margin: 1em;
+  margin: 2em;
+  margin-left: 2.5em;
+}
+
+footer img{
+  width: 13em;;
+  margin-bottom: 1em;
+}
+
+footer li img{
+  width: 1.2em;
+  height: 1.2em;
+  margin: .5em;
 }
 
 footer p{
   margin-bottom: 1em;
 }
 
+/*
+nav ul, nav h2{
+  margin: 0;
+  margin-top: 3em;
+  padding: 1em 0 0;
+  background-color: black;
+  list-style: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: .5s;
+  z-index: 50;
+}
+
+*/
+
 footer ul{
-  list-style-type: none;
-  margin-top: 1em;
   display: flex;
   flex-direction: row;
+  align-content: center;
+  list-style-type: none;
+}
+
+footer nav ul{
+  padding: 0;
+  list-style-type: none;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  position: unset;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  transform: unset;
+  z-index: unset;
+}
+
+footer nav ul li{
+  margin: .5em;
+  margin-left: 0;
+  
+}
+
+/*form vormgeving*/
+
+input{
+  color: white;
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: .5em;
+  
+}
+
+input::placeholder{
+  color: white;
 }
 
