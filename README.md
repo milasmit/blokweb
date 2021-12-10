@@ -110,7 +110,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Stand van zaken
 De foto's in een grid zetten was vrij makkelijk, en het ging ook goed om een hamburgermenu te maken. Ik heb daarvoor de opdracht gevolgd die op dlo staat. Ik heb wel een beetje moeite met de groottes van de afbeeldingen, want iconen wil ik kleiner hebben dan andere afbeeldingen. Het is ook nogal lastig om de afbeeldingen te veranderen als er gehoverd wordt.
 
-<img src="images/hoverenoverhomepagina" width="375px" alt="de homepagina als je er overheen hovert">
+<img src="images/hoverenoverhomepagina.jpg" width="375px" alt="de homepagina als je er overheen hovert">
 
 
 ### Agenda voor meeting
@@ -118,16 +118,12 @@ samen met je groepje opstellen
 
 | Mila           | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
-| Ik heb mijn    |
-|section een grid|
-|gegeven maar dan|
-|ziet dat er ook |
-|zo uit op mijn  |
-|tweede pagina.  | ...                | ...          | ...              |
-|<img src="images/fotovan2epagina" width="375px" alt="de tweede pagina door het grid op de homepagina">
+| Ik heb mijn section een grid gegevenmaar dan ziet dat er ook zo uit op mijn tweede pagina  |
+| | ...                | ...          | ...              |
+|<img src="images/fotovan2epagina.jpg" width="375px" alt="de tweede pagina door het grid op de homepagina">
 |Moet ik van de buttons een linkje maken of niet?
 |Alles hovered in een keer, hoe verander ik dat?
-<img src="images/codehoveren" width="375px" alt="de code waardoor alles in een keer hovert">
+<img src="images/codehoveren.jpg" width="375px" alt="de code waardoor alles in een keer hovert">
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -136,7 +132,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 - ik had gebruik gemaakt van divs om classes te geven aan de normale state en de hover state op de homepagina, maar ik kan daar beter ul gebruiken.
 - de header zou ik ook in een ul kunnen zetten, dat ziet er netter uit. 
 - Rowin heeft mij geholpen om de articles niet allemaal tegelijk te veranderen. Nu verandert alleen het stukje waar je overheen hovert
-<img src="images/codemetdivs" width="375px" alt="divs in plaats van ul">
+<img src="images/codemetdivs.jpg" width="375px" alt="divs in plaats van ul">
 </details>
 
 
@@ -167,20 +163,20 @@ Brillen:
 Als je met de tab door de website heen gaat, kun je niet op de menu knop drukken.
 
 Ik denk dat het opgelost kan worden door een a te maken van de img, want het is nu alleen een img.
-<img src="images/fotomenu_img" width="375px" alt="een foto van het menu element">
+<img src="images/fotomenu_img.jpg" width="375px" alt="een foto van het menu element">
 
 #### Focus state niet opvallend 
 De focus state in de navigatie is nu niet heel opvallend.
 
 Dit kan opgelost worden door het opvallender te maken met css.
 
-<img src="images/fotofocusstate" width="375px" alt="de focus state in de navigatie">
+<img src="images/fotofocusstate.jpg" width="375px" alt="de focus state in de navigatie">
 
 
 #### Navigatie footer 
 De navigatie in de footer wordt overgeslagen, en dat komt omdat het eigenlijk geen navigatie is, ik heb er gewoon een lijst van gemaakt, maar als ik er linkjes aan toevoeg, doet hij het waarschijnlijk wel.
 
-<img src="images/fotonavigatiefooter" width="375px" alt="de code voor de navigatie in de footer">
+<img src="images/fotonavigatiefooter.jpg" width="375px" alt="de code voor de navigatie in de footer">
 
 
 #### Tekst niet goed leesbaar 
@@ -201,9 +197,13 @@ Dit kan opgelost worden door het lettertype groter te maken, en de kleuren aan t
 
 ### Stand van zaken
 Ik had zelf best wel moeite om de hoverstate goed vorm te geven op de homepagina, dus ik heb aan Robert gevraagd of hij mij daarmee kon helpen, en toen is het gelukt. Ook had ik onder sommige afbeeldingen nog een kleine zwarte balk, die er niet moet zijn, en dat heb ik weggehaald.
-<img src="images/fotocodezwartebalkjes" width="375px" alt="de code waardoor de zwarte balkjes verdwijnen">
+
+<img src="images/fotocodezwartebalkjes.jpg" width="375px" alt="de code waardoor de zwarte balkjes verdwijnen">
+
 Daarnaast heb ik op de pleasing pen pagina een afbeelding die bovenaan staat als het een klein scherm is, maar als het scherm groter wordt, komt hij links bij de andere afbeeldingen te staan, en ik wist niet hoe ik dat voor elkaar moest krijgen, dus ik heb hulp gevraagd aan Rowin, en nu heb ik de afbeelding er twee keer in staan, en op een klein scherm is de ene niet zichtbaar, en op een groot scherm is de ander niet zichtbaar. 
-<img src="images/fotocodetweeafbeeldingen" width="375px" alt="de code voor de twee afbeeldingen">
+
+<img src="images/fotocodetweeafbeeldingen.jpg" width="375px" alt="de code voor de twee afbeeldingen">
+
 Verder heb ik de laatste vormgevingsdingen gedaan aan de website, vooral op de pleasingpagina, zoals witte balkjes tussen de details plaatsen, en de verschillende states vormgeven. Daar moet ik wel nog wat extra aandacht aan besteden.
 
 
