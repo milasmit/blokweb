@@ -5,14 +5,22 @@
   padding: 0;
 }
 
+/* algemene styling*/
+
 body{
   background-color: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+h1{
+  font-size: 3em;
 }
 
 h2{
   font-weight: bold;
+  font-size: 1.5em;
 }
 
 h3{
@@ -21,6 +29,19 @@ h3{
   margin-bottom: 0;
   font-size: 1em;
 }
+
+section{
+  margin-bottom: 2em;
+}
+
+section img{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2em;
+}
+
+
+/* header en navigatie*/
 
 header{
   padding: 1em 1em;
@@ -34,13 +55,13 @@ header{
   left: 0;
   right: 0;
   background-color: black;
+  z-index: 10;
 }
 
 header a{
   text-decoration: none;
   justify-self: center;
 }
-
 
 nav {
   order: -1;
@@ -50,17 +71,20 @@ nav img{
   position: relative;
   width: 5em;
   left: 0;
-  
+}
+
+header img{
+  height: 2em;
+  width: 2em;
 }
 
 header a img:last-of-type {
   width: 10em;
-  
 }
 
-nav ul, nav h2{
+nav ul{
   margin: 0;
-  margin-top: 3em;
+  margin-top: 4em;
   padding: 1em 0 0;
   background-color: black;
   list-style: none;
@@ -77,12 +101,23 @@ nav.toonMenu ul{
   transform: translateX(0);
 }
 
+nav form{
+  display: flex;
+  margin-left: 2em;
+  transform: translateX(-100%);
+  transition: .5s;
+  z-index: 50;
+  position: fixed;
+}
+
 nav li{
   margin: 0;
   margin-left: 1em;
-  margin-top: .5em;
+  margin-top: .8em;
   padding: 0;
-
+  font-weight: bold;
+  font-size: 1.2em;
+  width: fit-content;
 }
 
 nav a{
@@ -93,97 +128,70 @@ nav a{
   color: white;
 }
 
+nav a:hover, nav a:focus{
+  outline: none;
+  text-decoration: underline;
+}
+
+nav a:active{
+  color: lightgray;
+}
 
 
+/* video */
 
-main img{
+iframe{
+  margin-top: 0;
+  border: none;
+  overflow: hidden;
+}
+
+/*section video*/
+
+section.video{
+  margin: 0;
+  padding: 0;
+}
+
+/*play en pause iconen*/
+section.video img{
   width: 1em;
   height: 1em;
-}
-
-header img{
-  height: 2em;
-  width: 2em;
-}
-
-li img{
-  width: 2em;
-  margin: .2em;
+  margin: 0;
+  position: absolute;
+  left: 0;
 }
 
 
 
 
-section{
+
+
+
+/*homepagina fotogrid*/
+
+section.homepagina{
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+  margin: 0;
   grid-gap: 0;
 }
 
 article{
   overflow: hidden;
   height: 100%;
-}
-
-/* hoveren over de afbeeldingen */
-
-section article{
-  transition: .5s;
-}
-
-section:hover article, section:focus article{
-  background-color: lightgray;
-  padding: 0;
-}
-
-section:hover article .hover, section:focus article .hover{
-  padding: 0;
   display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-items: center;
-  align-content: center;
 }
 
-section:hover article .normaal, section:focus article .normaal{
-  display: none;
-}
-
-.hover {
-  display: none;
-}
-
-
-
-
-.normaal img{
+article img{
   width: 100%;
-  transition: .5s;
+  height: 100%;
+  margin-bottom: 0;
 }
 
-img.hover{
-  top: 0;
-  left: 0;
-  display: none;
-  
-}  
-
-.normaal:hover{
-  display: none;
-  padding: 0;
-}
-
-/*
-img.hover:hover{
-  display: contents;
-}
-
-*/
 
 /* afbeeldingen over 2 kolommen plaatsen*/
-
 
 article:nth-of-type(3){
   grid-column: span 2;
@@ -197,24 +205,280 @@ article:nth-of-type(11){
   grid-column: span 2;
 }
 
-article:nth-of-type(2):hover{
-  border: 1em solid white;
+
+/* hoveren over de afbeeldingen */
+
+section article{
+  transition: .5s;
+  font-size: 1em;
 }
 
-article img{
+section article:hover, section article:focus{
+  background-color: lightgray;
+  padding: 0;
+}
+
+section article:hover .hover, section article:focus .hover{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  color: black;
+}
+
+section article:hover .normaal, section article:focus .normaal{
+  display: none;
+}
+
+.hover {
+  display: none;
+}
+
+/*voor het hoveren over foto's voor een andere foto*/
+.normaal img{
   width: 100%;
+  transition: .5s;
+}
+
+img.hover{
+  top: 0;
+  left: 0;
+  display: none;
+  margin: 0;
+}  
+
+.normaal:hover{
+  display: none;
+  padding: 0;
+}
+
+article ul{
+  width: 100%;
+  
+  position: relative;
+}
+
+/* de zwarte randjes tussen de fotos weghalen*/
+article ul li.normaal{
   height: 100%;
 }
 
 
+/*linkjes in de hover stylen*/
 
-video{
-  width: 100%;
-  height: 100%;
+section.actions a:first-of-type{
+  position: absolute;
+  bottom:0;
+  left:0;
+  margin: .5em;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+section.actions a:last-of-type{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  margin: .5em;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*de teksten als je over de afbeelding hovert*/
+
+section.producttitel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+section.actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 
+/*section pleasing pagina*/
 
+section.pleasingpenpagina{
+  padding: 2em;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main section.pleasingpenpagina > img{
+  width: 100vw;
+  margin-left: -2em;
+}
+
+/*section aanmelden voor nieuwsbrief op pleasing pagina*/
+
+section.aanmelden{
+  border: .2em solid white;
+}
+
+section.aanmelden p, section.aanmelden form{
+  padding: .5em;
+  font-weight: normal;
+}
+
+
+/*section product informatie pleasing pagina*/
+
+section.productinfo{
+  margin-bottom: 0;
+}
+
+
+section.productinfo p:first-of-type{
+  font-weight: bold;
+  margin-bottom: .4em;
+}
+
+section.productinfo p:last-of-type{
+  font-size: 1.4em;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: right;
+}
+
+section.productkopen{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section.productkopen ul{
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+
+/*aantal producten kiezen */
+select{
+  background-color: white;
+  border: 3px solid white;
+  padding: .7em 1.5em;
+  flex-grow: 1;
+  font-size: 1em;
+}
+
+select:hover{
+  background-color: lightgrey;
+}
+
+select:focus{
+  border: 3px solid white;
+  outline: none;
+}
+
+button{
+  background-color: white;
+  border: 3px solid white;
+  padding: .7em 1.5em;
+  
+  flex-grow: 2;
+  width: fit-content;
+  margin-left: .5em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/*buy now knop*/
+button:nth-of-type(2){
+  width: 100%;
+  border: 3px solid white;
+  background-color: #30343b;
+  color: white;
+  margin-left: 0;
+  margin-top: .5em;
+}
+
+button:hover{
+  background-color: grey;
+  cursor: pointer;
+}
+
+button:focus{
+  border: 3px solid gold;
+  background-color: grey;
+  outline: none;
+}
+
+/*uitklapbare teksten*/
+details{
+  margin-bottom: 1em;
+  font-weight: bold;
+  
+  border-bottom: 1px solid white;
+}
+
+summary{
+  margin-bottom: .4em;
+}
+
+summary:hover, summary:focus{
+  text-decoration: underline;
+  outline: none;
+}
+
+summary:active{
+  color: lightgrey;
+}
+
+details p{
+  font-weight: normal;
+  margin-top: .5em;
+  margin-bottom: 1em;
+} 
+
+/* De eerste afbeelding onderin weghalen*/
+section.imagespleasingpen img:first-of-type{
+  display: none;
+}
+
+
+/*form vormgeving*/
+
+input{
+  color: white;
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: .5em;
+}
+
+input#email{
+  width: 80%;
+}
+
+input::placeholder{
+  color: white;
+}
+
+input:hover, input:focus{
+  border: 1px solid white;
+  outline: none;
+}
+
+input:active{
+  background-color: white;
+  color: black;
+}
+
+input:active::placeholder{
+  color: black;
+}
+
+
+/*footer*/
 
 footer{
   margin: 2em;
@@ -223,36 +487,29 @@ footer{
 
 footer img{
   width: 13em;;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 footer li img{
-  width: 1.2em;
-  height: 1.2em;
+  width: 1.7em;
+  height: 1.7em;
+  padding: .2em;
   margin: .5em;
+}
+
+footer li img:hover, footer li img:focus{
+  background-color: grey;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+footer li img:active{
+  border: 2px solid gold;
 }
 
 footer p{
   margin-bottom: 1em;
 }
-
-/*
-nav ul, nav h2{
-  margin: 0;
-  margin-top: 3em;
-  padding: 1em 0 0;
-  background-color: black;
-  list-style: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  transform: translateX(-100%);
-  transition: .5s;
-  z-index: 50;
-}
-
-*/
 
 footer ul{
   display: flex;
@@ -277,21 +534,25 @@ footer nav ul{
 footer nav ul li{
   margin: .5em;
   margin-left: 0;
-  
+  font-weight: normal;
 }
 
-/*form vormgeving*/
-
-input{
-  color: white;
-  background-color: black;
-  border: none;
-  border-bottom: 1px solid white;
-  padding: .5em;
-  
+footer li:hover, footer li:focus{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-input::placeholder{
-  color: white;
+footer li:active{
+  color: gold;
+}
+
+@media (min-width: 600px){
+  main section.pleasingpenpagina > img{
+    display: none;
+  
+  }
+  main section:last-of-type img:first-of-type{
+    display: block;
+  }
 }
 

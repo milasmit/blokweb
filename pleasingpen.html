@@ -16,9 +16,20 @@
     <header>
 		<nav>
 			<img src="images/menuicon.svg" alt="menu">
-			<h2>Perfect Pearl</h2>
-			<h2>Nail</h2>
+			
 				<ul>
+					<li>
+						<form>
+							<label for="aantal"></label>
+							<select name="aantal" id="aantal">
+								<option value="euro">EUR</option>
+								<option value="USD">USD</option>
+								<option value="XCD">XCD</option>
+								<option value="AUD">AUD</option>
+							</select>
+						</form>
+					</li>
+					<li>Perfect Pearl</li>
 					<li>Nail</li>
 					<li><a href="https://pleasing.com/products/nail-polish-4-set">The Perfect Polish Set</a></li>
 					<li><a href="https://pleasing.com/products/perfect-pearl-polish">Perfect Pearl Polish</a></li>
@@ -30,68 +41,67 @@
 				</ul>
 		</nav>
 		<a href="index.html"><img src="images/pleasinglogo.svg" alt="pleasing logo"></a>
-		<form>
-			<label for="aantal"></label>
-			<select name="aantal" id="aantal">
-				<option value="euro">EUR</option>
-				<option value="USD">USD</option>
-				<option value="XCD">XCD</option>
-				<option value="AUD">AUD</option>
-			</select>
-		</form>
+		
 		<img src="images/winkelmandje.svg" alt="winkelmandje">
 	</header>
     <main>
-		<section>
-        	<p>All pre-orders will ship the week of November 29th</p>
-        	<h1>The Pleasing Pen</h1>
-        	<p>€27,50</p>
-			<form>
-				<label for="aantal"></label>
-				<select name="aantal" id="aantal">
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-				</select>
-			</form>
-			<input type="submit" value="Add to cart">
-			<ul>
-				<li>Limit 4 per person (so there's enough to go around)</li>
-				<li>Sales are final</li>
-				<li>FREE SHIPPING on all US orders over $75 USD</li>
-			</ul>
-			<section>
+		<section class="pleasingpenpagina">
+			<img src="images/pleasingpenstaand.jpg" alt="een foto van het product Pleasing Pen">
+			<section class="productinfo">
+				<p>All pre-orders will ship the week of November 29th</p>
+				<h1>The Pleasing Pen</h1>
+				<p>€27,50</p>
+			</section>
+			<section class="productkopen">
+				<form>
+					<label for="aantal"></label>
+					<select name="aantal" id="aantal">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</form>
+				<button>Add to Basket</button>
+				<button>Buy Now</button>
+				<ul>
+					<li>Limit 4 per person (so there's enough to go around)</li>
+					<li>Sales are final</li>
+					<li>FREE SHIPPING on all US orders over $75 USD</li>
+				</ul>
+			</section>
+			<section class="aanmelden">
 				<p>Pre-order of the The Pleasing Pen has sold out, but don't worry, there's more Pleasing to go around. Sign up between now and the 28th of November for a code which gives you early access to Pleasing at 8am PST on the 29th of November, two hours ahead of our general sale. Find your Pleasing.</p>
 				<form>
-					<label for="email">E-mail</label>
-					<input type="text" id="email" name="email">
+					<label for="email"></label>
+					<input type="text" id="email" name="email" placeholder="Email">
 					<input type="submit" value="submit">
 				</form>
 			</section>
 			<section>
-				<h2>Details</h2>
-				<p>The Pleasing Pen’s two potent serums are delivered with cooling steel rollers to refresh lips and eyes. A fresh eye gel with natural lingonberry, okra and hyaluronic salt awakens tired undereyes, helps diminish signs of aging, and creates lasting hydration, while the demi-matte lip treatment with soothing marshmallow replenishes lips.</p>
-			</section>
-			<section>
-				<h2>Sustainability Details</h2>
-				<p>Our formula is vegan, cruelty-free, gluten-free, and adheres to clean principles. The pen’s formulas are non-comedogenic, suitable for all skin types, and dermatologist-tested. The eye formula is ophthalmologist-tested and safe for contact lens wearers.</p>
-			</section>
-			<section>
-				<h2>Helpful Instructions</h2>
-				<p>The product comes in a carton that is FSC certified (harvested in a responsible manner). It is 100% compostable and made with a minimum of 70% post-consumer material. It is printed with soy and water-based inks. Please recycle glass.</p>
-			</section>
-			<section>
-				<h2>Ingredients</h2>
-				<p>(Matte Lip Oil): Isononyl Isononanoate, Diisostearyl Malate, Hydrogenated Styrene/Isoprene Copolymer, Pentaerythrityl Tetra-Di-t-Butylhydroxyhydrocinnamate, Silica, Silica Silylate, Squalane, Hydrogenated Olive Oil Unsaponifiables, Caprylic/Capric Triglyceride, Althaea Officinalis Root Extract, Phenoxyethanol, Tocopheryl Acetate.
+				<details open>
+					<summary>Details</summary>
+					<p>The Pleasing Pen’s two potent serums are delivered with cooling steel rollers to refresh lips and eyes. A fresh eye gel with natural lingonberry, okra and hyaluronic salt awakens tired undereyes, helps diminish signs of aging, and creates lasting hydration, while the demi-matte lip treatment with soothing marshmallow replenishes lips.</p>
+				</details>
+				<details>
+					<summary>Sustainability Details</summary>
+					<p>Our formula is vegan, cruelty-free, gluten-free, and adheres to clean principles. The pen’s formulas are non-comedogenic, suitable for all skin types, and dermatologist-tested. The eye formula is ophthalmologist-tested and safe for contact lens wearers.</p>
+				</details>
+				<details>
+					<summary>Helpful Instructions</summary>
+					<p>The product comes in a carton that is FSC certified (harvested in a responsible manner). It is 100% compostable and made with a minimum of 70% post-consumer material. It is printed with soy and water-based inks. Please recycle glass.</p>
+				</details>
+				<details>
+					<summary>Ingredients</summary>
+					<p>(Matte Lip Oil): Isononyl Isononanoate, Diisostearyl Malate, Hydrogenated Styrene/Isoprene Copolymer, Pentaerythrityl Tetra-Di-t-Butylhydroxyhydrocinnamate, Silica, Silica Silylate, Squalane, Hydrogenated Olive Oil Unsaponifiables, Caprylic/Capric Triglyceride, Althaea Officinalis Root Extract, Phenoxyethanol, Tocopheryl Acetate.
 
-					(Refreshing Eye Gel): Water/Eau/Aqua, PEG-40 Hydrogenated Castor Oil, Squalane, Hydrogenated Olive Oil Unsaponifiables, Hydrolyzed Hibiscus Esculentus Extract, Vaccinium Vitis-Idaea Fruit Extract, Glycerin, Sodium Hyaluronate, Algin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Dextrin, Phenoxyethanol, Caprylyl Glycol, Xanthan Gum, Menthoxypropanediol, Sodium Benzoate, Calcium Gluconate, Gluconolactone, Citric Acid.</p>
+						(Refreshing Eye Gel): Water/Eau/Aqua, PEG-40 Hydrogenated Castor Oil, Squalane, Hydrogenated Olive Oil Unsaponifiables, Hydrolyzed Hibiscus Esculentus Extract, Vaccinium Vitis-Idaea Fruit Extract, Glycerin, Sodium Hyaluronate, Algin, Ammonium Acryloyldimethyltaurate/VP Copolymer, Dextrin, Phenoxyethanol, Caprylyl Glycol, Xanthan Gum, Menthoxypropanediol, Sodium Benzoate, Calcium Gluconate, Gluconolactone, Citric Acid.</p>
+				</details>
 			</section>
 		</section>
-		<section>
+		<section class="imagespleasingpen">
 			<img src="images/pleasingpenstaand.jpg" alt="een foto van het product Pleasing Pen">
 			<img src="images/pleasingpen.jpg" alt="een liggende foto van de Pleasing Pen">
-			
 			<img src="images/pleasingpenopen.jpg" alt="een foto van de Pleasing Pen zonder dop">
 			<img src="images/druppelswater.jpg" alt="druppels water">
 			<img src="images/manmetpleasingpen1.jpg" alt="een man die de Pleasing Pen gebruikt">
@@ -106,20 +116,22 @@
 			<li><img src="images/twitter.svg" alt="twitter"></li>
 			<li><img src="images/tiktokicon.svg" alt="tiktok"></li>
 		</ul>
-		<ul>
-			<li>Contact</li>
-			<li>FAQ / Shipping & Returns</li>
-			<li>Do Better</li>
-			<li>Privacy Policy</li>
-			<li>Terms of Service</li>
-			<li>Accessibility</li>
-			<li>Refund Policy</li>
-		</ul>
+		<nav>
+			<ul>
+				<li>Contact</li>
+				<li>FAQ / Shipping & Returns</li>
+				<li>Do Better</li>
+				<li>Privacy Policy</li>
+				<li>Terms of Service</li>
+				<li>Accessibility</li>
+				<li>Refund Policy</li>
+			</ul>
+		</nav>
 		<p>Sign up to Find your Pleasing</p>
 		<form>
-			<label for="email">E-mail</label>
-			<input type="text" id="email" name="email">
-			<input type="submit" value="submit">
+			<label for="email"></label>
+			<input type="text" id="email" name="email" placeholder="Email">
+			<input type="submit" value="Submit">
 		</form>
 	</footer>
 
