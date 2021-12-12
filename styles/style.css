@@ -45,10 +45,9 @@ section img{
 
 header{
   padding: 1em 1em;
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
+  display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
@@ -67,7 +66,7 @@ nav {
   order: -1;
 }
 
-nav img{
+header nav a img{
   position: relative;
   width: 5em;
   left: 0;
@@ -80,6 +79,31 @@ header img{
 
 header a img:last-of-type {
   width: 10em;
+}
+
+header a img:last-of-type:hover{
+  border: 2px solid white;
+}
+
+header a img:last-of-type:focus{
+  outline: none;
+  border: 2px solid white;
+}
+
+nav button{
+  padding: 0;
+  background-color: black;
+  border: none;
+}
+
+nav button img{
+  margin: .5em;
+}
+
+nav button:hover, nav button:focus{
+  background-color: black;
+  outline: none;
+
 }
 
 nav ul{
@@ -130,7 +154,7 @@ nav a{
 
 nav a:hover, nav a:focus{
   outline: none;
-  text-decoration: underline;
+  border: 2px solid white;
 }
 
 nav a:active{
@@ -138,31 +162,33 @@ nav a:active{
 }
 
 
-/* video */
 
-iframe{
-  margin-top: 0;
-  border: none;
-  overflow: hidden;
-}
 
 /*section video*/
 
 section.video{
   margin: 0;
   padding: 0;
+  padding-top: 50%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  pointer-events: none;
 }
 
-/*play en pause iconen*/
-section.video img{
-  width: 1em;
-  height: 1em;
-  margin: 0;
+/* video */
+
+iframe{
+  margin-top: 0;
+  border: none;
   position: absolute;
+  height: 120%;
+  width: 120%;
+  margin-left: -10%;
+  top: 0;
   left: 0;
+  scroll-behavior: smooth;
 }
-
-
 
 
 
@@ -254,7 +280,6 @@ img.hover{
 
 article ul{
   width: 100%;
-  
   position: relative;
 }
 
@@ -263,6 +288,9 @@ article ul li.normaal{
   height: 100%;
 }
 
+article:nth-of-type(8) ul li.hover{
+  height: 100%;
+}
 
 /*linkjes in de hover stylen*/
 
@@ -306,14 +334,14 @@ section.actions{
 
 /*section pleasing pagina*/
 
-section.pleasingpenpagina{
+section.pleasingpen{
   padding: 2em;
   padding-top: 0;
   display: flex;
   flex-direction: column;
 }
 
-main section.pleasingpenpagina > img{
+main section.pleasingpen > img{
   width: 100vw;
   margin-left: -2em;
 }
@@ -370,12 +398,9 @@ select{
   font-size: 1em;
 }
 
-select:hover{
+select:hover, select:focus{
   background-color: lightgrey;
-}
-
-select:focus{
-  border: 3px solid white;
+  border: 3px solid gold;
   outline: none;
 }
 
@@ -425,7 +450,7 @@ summary{
 }
 
 summary:hover, summary:focus{
-  text-decoration: underline;
+  text-decoration: underline 2px;
   outline: none;
 }
 
@@ -453,11 +478,12 @@ input{
   border: none;
   border-bottom: 1px solid white;
   padding: .5em;
+  font-size: 1em;
 }
 
 input#email{
   width: 80%;
-}
+} 
 
 input::placeholder{
   color: white;
@@ -466,6 +492,7 @@ input::placeholder{
 input:hover, input:focus{
   border: 1px solid white;
   outline: none;
+  background-color: darkgray;
 }
 
 input:active{
@@ -483,6 +510,8 @@ input:active::placeholder{
 footer{
   margin: 2em;
   margin-left: 2.5em;
+  display: flex;
+  flex-direction: column;
 }
 
 footer img{
@@ -509,6 +538,7 @@ footer li img:active{
 
 footer p{
   margin-bottom: 1em;
+  font-size: 1em;
 }
 
 footer ul{
@@ -516,6 +546,10 @@ footer ul{
   flex-direction: row;
   align-content: center;
   list-style-type: none;
+}
+
+footer nav{
+  order: 0;
 }
 
 footer nav ul{
@@ -529,6 +563,7 @@ footer nav ul{
   justify-content: center;
   transform: unset;
   z-index: unset;
+  
 }
 
 footer nav ul li{
@@ -537,22 +572,124 @@ footer nav ul li{
   font-weight: normal;
 }
 
-footer li:hover, footer li:focus{
+footer nav ul li a{
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0;
+}
+
+footer li a:hover, footer li a:focus{
   text-decoration: underline;
   cursor: pointer;
 }
 
-footer li:active{
+footer li a:active{
   color: gold;
 }
 
-@media (min-width: 600px){
-  main section.pleasingpenpagina > img{
-    display: none;
-  
-  }
-  main section:last-of-type img:first-of-type{
-    display: block;
+@media (max-width: 424px){
+  input#email{
+    width: 70%;
   }
 }
 
+
+@media (min-width: 700px){
+  
+  header{
+    height: 6em;
+  }
+
+  header button{
+    margin: 1em;
+  }
+
+  header img{
+    margin: 1em;
+  }
+
+  main.pleasingpenpagina{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  section.pleasingpen{
+    max-width: 450px;
+  }
+
+  main section.pleasingpen > img{
+    display: none;
+  
+  }
+  main.pleasingpenpagina section:last-of-type img:first-of-type{
+    display: block;
+  }
+
+  main section.pleasingpen{
+  
+    padding-top: 2em;
+  }
+
+  main section:last-of-type{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1000px){
+  header img{
+    margin: 2em;
+  }
+
+  header button{
+    margin: 2em;
+  }
+
+  section.homepagina{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  section.pleasingpen{
+    margin: 2em;
+    margin-right: 5em;
+  }
+
+  h2{
+    font-size: 1.8em;
+  }
+
+  h3, summary{
+    font-size: 1.3em;
+  }
+
+ 
+  p, footer p, li, a, input{
+    font-size: 1.2em;
+  }
+
+  input#email{
+    width: 75%
+  }
+
+  footer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em;
+    padding-top: 0;
+    
+  }
+
+  footer section:first-of-type{
+    margin-bottom: 185px;
+  }
+
+  footer section:nth-of-type(2){
+    margin-left: 80px;
+  }
+
+  footer section:last-of-type{
+    width: 350px;
+    margin-left: auto;
+    margin-top: 50px;
+  }
+}

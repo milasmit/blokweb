@@ -220,10 +220,8 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- De enigste article die raar doet, is die van de pleasing pen, dus Martijn heeft gezegd dat ik die apart kan aanroepen en daar gewoon een hoogte aan kan geven, dus dat heb ik gedaan.
+- Verder zag alles er goed uit.
 
 </details>
 
@@ -237,11 +235,29 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het lukte niet heel erg om de video goed te positioneren, ik had het op meerdere websites opgezocht. De laatste website die ik zag heeft me geholpen. Toen stond de video eindelijk goed, en toen kwam ik erachter dat als de muis op de video staat, je niet kunt scrollen. Dit heb ik ook op meerdere websites opgezocht, en niks had geholpen. Toen heb ik het aan mijn broer gevraagd en die zei dat ik 'pointer-events: none' moest gebruiken. 
+
+Verder moest ik de site nog responsive maken, en dat ging eigenlijk heel makkelijk. Ik heb een aantal states nog wat duidelijker gemaakt, omdat uit de toegankelijksheidtest kwam dat sommigen nog niet duidelijk waren. Ook heb ik het lettertype vergroot bij een groter beeldscherm. Op de telefoon vind ik het namelijk wel goed leesbaar. Als laatste heb ik nog van het menu een button gemaakt, omdat hij anders wordt overgeslagen als je met het toetsenbord door de site heen gaat. 
 
 ### Screenshot(s)
 
 hier screenshot(s) van je eindresultaat
+
+klein scherm homepagina:
+
+<img src="images/kleinschermhomepagina.png" width="375px" alt="de homepagina op een klein scherm">
+
+klein scherm pleasing pen pagina:
+
+<img src="images/kleinschermpleasingpen.png" width="375px" alt="de pleasing pen pagina op een klein scherm">
+
+groot scherm homepagina:
+
+<img src="images/grootschermhomepagina.png" width="375px" alt="de homepagina op een groot scherm">
+
+groot scherm pleasing pen pagina:
+
+<img src="images/grootschermpleasingpen" width="375px" alt="de pleasing pen pagina op een groot scherm">
 
 </details>
 
@@ -259,5 +275,7 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 1. https://www.w3schools.com/css/css_form.asp, voor het vormgeven van de formulieren.
 2. https://codepen.io/robertspier/pen/LYjwBRQ?editors=1100, voor het hoveren over de foto's.
 3. https://codepen.io/shooft/pen/zYzEPgv, voor het hamburgermenu.
+4. https://www.benmarshall.me/responsive-iframes/, voor het responsive maken van de video.
+5. https://css-tricks.com/snippets/css/a-guide-to-flexbox/, voor alles wat display: flex is.
 
 </details>

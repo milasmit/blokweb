@@ -1,6 +1,6 @@
 // JavaScript Document
 
-var menu = document.querySelector("img");
+var menu = document.querySelector("header nav button");
 
 menu.addEventListener("click", toggleMenu);
 
