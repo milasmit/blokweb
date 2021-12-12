@@ -257,7 +257,7 @@ groot scherm homepagina:
 
 groot scherm pleasing pen pagina:
 
-<img src="images/grootschermpleasingpen" width="375px" alt="de pleasing pen pagina op een groot scherm">
+<img src="images/grootschermpleasingpen.png" width="375px" alt="de pleasing pen pagina op een groot scherm">
 
 </details>
 
