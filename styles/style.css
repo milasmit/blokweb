@@ -5,11 +5,19 @@
   padding: 0;
 }
 
+:root{
+  --hoofdkleur: #000000;
+  --wit: #ffffff;
+  --hoverkleur: lightgrey;
+  --detailkleur: gold;
+
+}
+
 /* algemene styling*/
 
 body{
-  background-color: black;
-  color: white;
+  background-color: var(--hoofdkleur);
+  color: var(--wit);
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
 }
@@ -53,7 +61,7 @@ header{
   top: 0;
   left: 0;
   right: 0;
-  background-color: black;
+  background-color: var(--hoofdkleur);
   z-index: 10;
 }
 
@@ -82,26 +90,27 @@ header a img:last-of-type {
 }
 
 header a img:last-of-type:hover{
-  border: 2px solid white;
+  border: 2px solid var(--wit);
 }
 
 header a img:last-of-type:focus{
   outline: none;
-  border: 2px solid white;
+  border: 2px solid var(--wit);
 }
 
 nav button{
   padding: 0;
-  background-color: black;
+  background-color: var(--hoofdkleur);
   border: none;
 }
 
 nav button img{
   margin: .5em;
+  pointer-events: none;
 }
 
 nav button:hover, nav button:focus{
-  background-color: black;
+  background-color: var(--hoofdkleur);
   outline: none;
 
 }
@@ -110,7 +119,7 @@ nav ul{
   margin: 0;
   margin-top: 4em;
   padding: 1em 0 0;
-  background-color: black;
+  background-color: var(--hoofdkleur);
   list-style: none;
   position: fixed;
   left: 0;
@@ -149,16 +158,16 @@ nav a{
   align-items: center;
   gap: .25em;
   padding: .25em 1em;
-  color: white;
+  color: var(--wit);
 }
 
 nav a:hover, nav a:focus{
   outline: none;
-  border: 2px solid white;
+  border: 2px solid var(--wit);
 }
 
 nav a:active{
-  color: lightgray;
+  color: var(--hoverkleur);
 }
 
 
@@ -187,7 +196,6 @@ iframe{
   margin-left: -10%;
   top: 0;
   left: 0;
-  scroll-behavior: smooth;
 }
 
 
@@ -240,7 +248,7 @@ section article{
 }
 
 section article:hover, section article:focus{
-  background-color: lightgray;
+  background-color: var(--hoverkleur);
   padding: 0;
 }
 
@@ -249,7 +257,7 @@ section article:hover .hover, section article:focus .hover{
   display: flex;
   flex-direction: column;
   justify-self: center;
-  color: black;
+  color: var(--hoofdkleur);
 }
 
 section article:hover .normaal, section article:focus .normaal{
@@ -299,7 +307,7 @@ section.actions a:first-of-type{
   bottom:0;
   left:0;
   margin: .5em;
-  color: black;
+  color: var(--hoofdkleur);
   font-weight: bold;
   text-decoration: underline;
 }
@@ -310,7 +318,7 @@ section.actions a:last-of-type{
   bottom: 0;
   width: auto;
   margin: .5em;
-  color: black;
+  color: var(--hoofdkleur);
   font-weight: bold;
   text-decoration: underline;
 }
@@ -349,7 +357,7 @@ main section.pleasingpen > img{
 /*section aanmelden voor nieuwsbrief op pleasing pagina*/
 
 section.aanmelden{
-  border: .2em solid white;
+  border: .2em solid var(--wit);
 }
 
 section.aanmelden p, section.aanmelden form{
@@ -391,22 +399,22 @@ section.productkopen ul{
 
 /*aantal producten kiezen */
 select{
-  background-color: white;
-  border: 3px solid white;
+  background-color: var(--wit);
+  border: 3px solid var(--wit);
   padding: .7em 1.5em;
   flex-grow: 1;
   font-size: 1em;
 }
 
 select:hover, select:focus{
-  background-color: lightgrey;
-  border: 3px solid gold;
+  background-color: var(--hoverkleur);
+  border: 3px solid var(--detailkleur);
   outline: none;
 }
 
 button{
-  background-color: white;
-  border: 3px solid white;
+  background-color: var(--wit);
+  border: 3px solid var(--wit);
   padding: .7em 1.5em;
   
   flex-grow: 2;
@@ -419,9 +427,9 @@ button{
 /*buy now knop*/
 button:nth-of-type(2){
   width: 100%;
-  border: 3px solid white;
+  border: 3px solid var(--wit);
   background-color: #30343b;
-  color: white;
+  color: var(--wit);
   margin-left: 0;
   margin-top: .5em;
 }
@@ -432,7 +440,7 @@ button:hover{
 }
 
 button:focus{
-  border: 3px solid gold;
+  border: 3px solid var(--detailkleur);
   background-color: grey;
   outline: none;
 }
@@ -441,8 +449,7 @@ button:focus{
 details{
   margin-bottom: 1em;
   font-weight: bold;
-  
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--wit);
 }
 
 summary{
@@ -455,7 +462,7 @@ summary:hover, summary:focus{
 }
 
 summary:active{
-  color: lightgrey;
+  color: var(--hoverkleur);
 }
 
 details p{
@@ -473,10 +480,10 @@ section.imagespleasingpen img:first-of-type{
 /*form vormgeving*/
 
 input{
-  color: white;
-  background-color: black;
+  color: var(--wit);
+  background-color: var(--hoofdkleur);
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--wit);
   padding: .5em;
   font-size: 1em;
 }
@@ -486,22 +493,22 @@ input#email{
 } 
 
 input::placeholder{
-  color: white;
+  color: var(--wit);
 }
 
 input:hover, input:focus{
-  border: 1px solid white;
+  border: 1px solid var(--wit);
   outline: none;
   background-color: darkgray;
 }
 
 input:active{
-  background-color: white;
-  color: black;
+  background-color: var(--wit);
+  color: var(--hoofdkleur);
 }
 
 input:active::placeholder{
-  color: black;
+  color: var(--hoofdkleur);
 }
 
 
@@ -533,7 +540,7 @@ footer li img:hover, footer li img:focus{
 }
 
 footer li img:active{
-  border: 2px solid gold;
+  border: 2px solid var(--detailkleur);
 }
 
 footer p{
@@ -584,7 +591,7 @@ footer li a:hover, footer li a:focus{
 }
 
 footer li a:active{
-  color: gold;
+  color: var(--detailkleur);
 }
 
 @media (max-width: 424px){
@@ -680,16 +687,16 @@ footer li a:active{
   }
 
   footer section:first-of-type{
-    margin-bottom: 185px;
+    margin-bottom: 11.5em;
   }
 
   footer section:nth-of-type(2){
-    margin-left: 80px;
+    margin-left: auto;
   }
 
   footer section:last-of-type{
-    width: 350px;
+    width: 22em;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 3.125em;
   }
 }
